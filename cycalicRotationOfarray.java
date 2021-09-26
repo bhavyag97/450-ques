@@ -1,7 +1,20 @@
+   import java.util.*;
+
+
 public class cycalicRotationOfarray {
+
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size of array");
+            int n=sc.nextInt();
         int last;
-        int a[] = {1, 2, 3, 4, 5};
+
+        int a[] = new int[n] ;
+        System.out.println("enter the elements");
+        for (int k=0;k<a.length;k++){
+
+            a[k]=sc.nextInt();
+        }
 //        int b[]=new int[a.length];
 //        for (int i = 0; i < a.length; i++) {
 //
@@ -26,7 +39,7 @@ public class cycalicRotationOfarray {
 
             }
             for (int j = 0; j < a.length; j++) {
-                System.out.print(a[j]);
+                System.out.print(a[j] +" ");
             }
         }
     }
